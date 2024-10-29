@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio de Salma LOUKILI</title>
+</head>
+<body>
+    <header>
+        <a href="Salma LOUKILI.jpeg" class="logo">Salma Loukili</a>
+              <!-- Bouton de menu hamburger pour mobile -->
+              <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        <nav>
+            <a href="index.html" > Qui suis-je ?</a>
+          
+            <a href="Mon parcours scolaire.html" >Mon parcours scolaire</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Projets.html" >Projets</a>
+            <a href="Me contacter.html" class="active" >Me contacter</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="Salma.jpeg" alt="Salma LOUKILI">
+        </div>
+
+
+        <style>
+            /* Styles Desktop */
+            nav {
+                display: flex;
+                gap: 1rem;
+            }
+          
+            /* Bouton de menu hamburger caché sur desktop */
+            .menu-toggle {
+                display: none;
+            }
+          
+            /* Styles pour Mobile */
+            @media (max-width: 768px) {
+                /* Afficher le bouton hamburger sur mobile */
+                .menu-toggle {
+                    display: block;
+                    font-size: 2rem;
+                    background: none;
+                    border: none;
+                    color: #fff;
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                }
+          
+                /* Styles du menu */
+                nav {
+                    display: none; /* Caché par défaut */
+                    position: absolute;
+                    top: 3rem;
+                    right: 0;
+                    width: 60%;
+                    background-color: #161616;
+                    border-left: 3px solid #98DED9;
+                    border-bottom: 3px solid #98DED9;
+                    border-bottom-left-radius: 2rem;
+                    padding: 1rem;
+                }
+          
+                /* Afficher le menu quand la classe active est ajoutée */
+                nav.active {
+                    display: block;
+                }
+          
+                nav a {
+                    display: block;
+                    font-size: 1.5rem;
+                    color: #fff;
+                    text-decoration: none;
+                    margin: 1rem 0;
+                }
+          
+                nav a:hover,
+                nav a.active {
+                    background-color: #333;
+                    padding: 0.5rem;
+                    border-radius: 0.5rem;
+                }
+            }
+          </style>
+          
+          <script>
+            // Script JavaScript pour activer et désactiver le menu
+            document.querySelector('.menu-toggle').addEventListener('click', function() {
+                document.querySelector('nav').classList.toggle('active');
+            });
+          </script>

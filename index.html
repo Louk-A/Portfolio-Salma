@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Portfolio de Salma LOUKILI</title>
+</head>
+<body>
+    <header>
+              <!-- Bouton de menu hamburger pour mobile -->
+              <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+        <a href="#" class="logo">Salma Loukili</a>
+
+      
+<nav>
+
+      
+            <a href="index.html" class="active"> Qui suis-je ?</a>
+          
+            <a href="Mon parcours scolaire.html" >Mon parcours scolaire</a>
+            <a href="Skills.html" >Skills</a>
+            <a href="Projets.html" >Projets</a>
+            <a href="Me contacter.html" >Me contacter</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="Salma.jpeg" alt="Salma LOUKILI">
+        </div>
+        <div class="home-content">
+            <h1>Portfolio de<br> <span>Salma LOUKILI</span></h1><br>
+
+
+            <h3>Étudiante en réseaux et
+                télécommunications<span></span></h3><br>
+
+            <p>Bienvenue sur mon espace personnel !
+                Étudiante marocaine en réseaux et
+                télécommunications à l'IUT de Châtellerault,
+                je poursuis avec détermination mes études
+                en France depuis cette année. Mon parcours
+                est marqué par ma volonté de réussir et de
+                m'adapter à de nouveaux défis académiques
+                et personnels.
+               <br>
+                « La vraie générosité envers l’avenir
+                consiste à tout donner au présent. »
+                </p>
+            <div class="social-icons">
+                <a href="https://fr.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+    
+            </div>
+            <a href="Me contacter.html" class="btn">Me contacter</a>
+        </div>
+    </section>
+</body>
+</html>
+<style>
+    /* Styles Desktop */
+    nav {
+        display: flex;
+        gap: 1rem;
+    }
+  
+    /* Bouton de menu hamburger caché sur desktop */
+    .menu-toggle {
+        display: none;
+    }
+  
+    /* Styles pour Mobile */
+    @media (max-width: 768px) {
+        /* Afficher le bouton hamburger sur mobile */
+        .menu-toggle {
+            display: block;
+            font-size: 2rem;
+            background: none;
+            border: none;
+            color: #fff;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+  
+        /* Styles du menu */
+        nav {
+            display: none; /* Caché par défaut */
+            position: absolute;
+            top: 3rem;
+            right: 0;
+            width: 60%;
+            background-color: #161616;
+            border-left: 3px solid #98DED9;
+            border-bottom: 3px solid #98DED9;
+            border-bottom-left-radius: 2rem;
+            padding: 1rem;
+        }
+  
+        /* Afficher le menu quand la classe active est ajoutée */
+        nav.active {
+            display: block;
+        }
+  
+        nav a {
+            display: block;
+            font-size: 1.5rem;
+            color: #fff;
+            text-decoration: none;
+            margin: 1rem 0;
+        }
+  
+        nav a:hover,
+        nav a.active {
+            background-color: #333;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+        }
+    }
+  </style>
+  
+  <script>
+    // Script JavaScript pour activer et désactiver le menu
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav').classList.toggle('active');
+    });
+  </script>
